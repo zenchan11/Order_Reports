@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './App.scss';
+import "./App.scss";
 
 const App = () => {
   // List of chart options
@@ -11,22 +11,29 @@ const App = () => {
     { id: "2020", label: "Total Orders 2020", file: "/charts/total_orders_2020.html" },
     { id: "2019", label: "Total Orders 2019", file: "/charts/total_orders_2019.html" },
     { id: "2018", label: "Total Orders 2018", file: "/charts/total_orders_2018.html" },
-    { id: "Total", label: "Total Orders", file: "/charts/tota_orders.html" },
+    { id: "Total", label: "Total Orders", file: "/charts/total_orders.html" },
     { id: "average", label: "Average Orders Each Month", file: "/charts/average_orders_each_month.html" },
     { id: "Total Party", label: "Total Orders Each Party", file: "/charts/combined_charts.html" },
   ];
 
   const [selectedChart, setSelectedChart] = useState(charts[0]);
+  const [menuOpen, setMenuOpen] = useState(false); // State for mobile menu toggle
 
   return (
     <div className="app">
-      <nav className="navbar">
+      <nav className={`navbar ${menuOpen ? "open" : ""}`}>
+        <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
+        </button>
         <ul>
           {charts.map((chart) => (
             <li key={chart.id}>
               <button
                 className={selectedChart.id === chart.id ? "active" : ""}
-                onClick={() => setSelectedChart(chart)}
+                onClick={() => {
+                  setSelectedChart(chart);
+                  setMenuOpen(false); // Close menu on selection
+                }}
               >
                 {chart.label}
               </button>
