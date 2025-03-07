@@ -14,6 +14,7 @@ const App = () => {
     { id: "Total", label: "Total Orders", file: "/charts/total_orders.html" },
     { id: "average", label: "Average Orders Each Month", file: "/charts/average_orders_each_month.html" },
     { id: "Total Party", label: "Total Orders Each Party", file: "/charts/combined_charts.html" },
+    { id: "Total Party Only", label: "Total Orders Each Party Compare", file: "/charts/plot.html" },
   ];
 
   const [selectedChart, setSelectedChart] = useState(charts[0]);
