@@ -4,14 +4,14 @@ import "./App.scss";
 const App = () => {
   // List of chart options
   const charts = [
-    { id: "2024", label: "Total Orders 2024", file: "/charts/total_orders_2024.html" },
-    { id: "2023", label: "Total Orders 2023", file: "/charts/total_orders_2023.html" },
-    { id: "2022", label: "Total Orders 2022", file: "/charts/total_orders_2022.html" },
-    { id: "2021", label: "Total Orders 2021", file: "/charts/total_orders_2021.html" },
-    { id: "2020", label: "Total Orders 2020", file: "/charts/total_orders_2020.html" },
-    { id: "2019", label: "Total Orders 2019", file: "/charts/total_orders_2019.html" },
-    { id: "2018", label: "Total Orders 2018", file: "/charts/total_orders_2018.html" },
-    { id: "Total", label: "Total Orders", file: "/charts/total_orders.html" },
+    { id: "2024", label: "Total Orders 2024", file: "/charts/total_sqmt_2024.html" },
+    { id: "2023", label: "Total Orders 2023", file: "/charts/total_sqmt_2023.html" },
+    { id: "2022", label: "Total Orders 2022", file: "/charts/total_sqmt_2022.html" },
+    { id: "2021", label: "Total Orders 2021", file: "/charts/total_sqmt_2021.html" },
+    { id: "2020", label: "Total Orders 2020", file: "/charts/total_sqmt_2020.html" },
+    { id: "2019", label: "Total Orders 2019", file: "/charts/total_sqmt_2019.html" },
+    { id: "2018", label: "Total Orders 2018", file: "/charts/total_sqmt_2018.html" },
+    { id: "Total", label: "Total Orders", file: "/charts/total_sqmt_with_regression.html" },
     { id: "average", label: "Average Orders Each Month", file: "/charts/average_orders_each_month.html" },
     { id: "Total Party", label: "Total Orders Each Party", file: "/charts/combined_charts.html" },
     { id: "Total Party Only", label: "Total Orders Each Party Compare", file: "/charts/plot.html" },
